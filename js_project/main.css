@@ -1,0 +1,75 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color: green;
+}
+.container{
+    margin: 50px;
+}
+.game__header{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;    
+    margin:20px;
+}
+.game__footer{
+    margin-bottom: 30px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    bottom: -20px;
+}
+.game__container{
+    margin:auto;
+    display: flex;
+    align-content:center;
+    flex-direction:row;
+    justify-content: center;
+}
+.sidebar__left{
+    width: 150px;
+    max-width: 150px;
+    position:relative;
+    margin-right: 20px;
+    border: solid black;
+    padding-right:70px;
+    padding-left: 20px;
+}
+
+.game__buttons{
+    position: absolute;
+    bottom: 10px;
+}
+.btn{
+    font-family:'Courier New', Courier, monospace;
+    width:100px;
+    cursor: pointer;
+    padding:5px;
+    background-color: rgb(194, 194, 194);
+    border-radius: 0;
+}
+.btn:hover{
+    background-color:rgb(53, 252, 53);
+}
+
+/* Id's */
+
+#game__title{
+    font-weight: bolder;
+    font-size:5rem;
+}
+#game__canvas{
+    width: 10 rem;
+    height: 10 rem;
+    background-color: rgb(255, 255, 255);
+    border-color:black;
+    border-style:solid;
+}
+#endGame__btn{
+    display:none;
+}

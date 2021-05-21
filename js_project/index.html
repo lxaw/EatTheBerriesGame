@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href = "main.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Berries!</title>
+</head>
+
+<body>
+    <audio id = "game__theme-song">
+        <source src ="resources/audio/Two Sides - SefChol.mp3">
+    </audio>
+
+    <div class = "container">
+        <div class ="game__header">
+            <h1 id ="game__title">
+                Eat the Berries!
+            </h1>
+        </div>
+        <div class = "game__container">
+
+            <div class = "sidebar__left">
+                <p id = "game__score">
+                    Score:       
+                </p>
+                <div id = "game__stats">
+                    <div id = "player__stats">
+                        <p id = "player__stats__y-berries">
+                            Yum Berries: 
+                        </p>
+                        <p id = "player__stats__p-berries">
+                            Poison Berries:
+                        </p>
+                        <p id = "player__stats__berries">
+                            Total berries:
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class = "game__buttons">
+                    <!-- This button is for new game -->
+                    <button class = "btn" id = "newGame__btn" type = "button" 
+                        class = "btn btn-outline-primary"
+                        onclick = "newGame()">
+                        New Game
+                    </button>
+
+                    <!-- This button is to End Game -->
+                    <button class = "btn" id = "endGame__btn" type = "button" 
+                        class = "btn btn-outline-primary"
+                        onclick = "endGame()">
+                        End Game
+                    </button>
+                </div>
+            </div>
+
+            <!-- note you need to initialize the canvas with the height and width for some reason 
+            Else it will look blurry! -->
+            <canvas id="game__canvas" width="600" height="600"></canvas>
+
+        
+            <div>
+        </div>
+
+        <div class = "game__footer">
+            <h1>Follow on GitHub: </h1>
+            <a href = "https://github.com/LexingtonWhalen/EatTheBerriesGame">Click me!</a>
+        </div>
+
+
+<!-- end container div -->
+    </div>
+
+    
+
+<script src="main.js"></script>
+
+</body>
+</html>
