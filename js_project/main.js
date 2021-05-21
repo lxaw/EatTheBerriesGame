@@ -1,4 +1,5 @@
-// globals
+// Written (with love) by Lex Whalen
+
 class Globals{
     /*
     This class holds all of the globally referenced variables necessary
